@@ -1,5 +1,131 @@
 .container {
     max-width: 1125px;
-    background-color: red;
     margin: 0 auto;
+    border: 1px solid red;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDFDFB;
+    height: 85px;
+}
+
+.header__navigation {
+    li {
+        font-family: "Roboto", sans-serif;
+        color: #555248;
+        font-size: 14px;
+        display: inline;
+        margin-right: 65px;
+    }
+}
+
+.header__toolbar {
+    li{
+        display: inline;
+        margin-right: 5px;
+    }
+}
+
+.toolbar__btn {
+    background-color: transparent;
+    border: none;
+}
+
+.toolbar__counter {
+    position: relative;
+    right: 15px;
+    bottom: 13px;
+    font-size: 8px;
+    height: 13px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #E6C8B4;
+}
+.logo__icon {
+    width: 19px;
+    height: 19px;
+}
+
+.intro__content {
+    height: 768px;
+    background-color: #FDFDFB;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__img {
+    position: relative;
+    margin-right: 100px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.intro__gradient {
+    position: relative;
+    bottom: 848px;
+    right: 200px;
+    z-index: 1;
+}
+.intro__price {
+    position: relative;
+    bottom: 660px;
+    right: 100px
+}
+
+.intro__diameter {
+    position: relative;
+    bottom: 200px;
+    left: 470px
+}
+
+.popular__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 720px;
+    background-color: #FFFFFF;
+}
+
+
+.popular__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    li{
+        display: block;
+        width: 350px;
+        height: 467px;
+        background-color: #FDFDFB;
+        img{
+            height: 313px;
+            width: 313px;
+        }
+    }
+}
+
+.popular__elipse {
+    position: relative;
+    bottom: 320px;
+    right: 5px;
+}
+.popular__more {
+    position: relative;
+    bottom: 300px;
+}
+
+
+
+.footer__content {
+    height: 275px;
+    background-color: #444240;
 }
