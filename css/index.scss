@@ -1,11 +1,43 @@
-body {
-    overflow-x: hidden;
+@font-face {
+    font-family: "PlayfairDisplayRegular";
+    url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
 }
 
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+
+    color: #1B1A17;
+}
 h2 {
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #1B1A17;
 }
 
 p {
@@ -20,7 +52,6 @@ p {
 .container {
     max-width: 1125px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .header__content {
@@ -33,11 +64,14 @@ p {
 
 .header__navigation {
     li {
-        font-family: "Roboto", sans-serif;
-        color: #555248;
-        font-size: 14px;
         display: inline;
         margin-right: 65px;
+        a {
+            font-family: "Roboto", sans-serif;
+            color: #555248;
+            font-size: 14px;
+            text-decoration: none;
+        }
     }
 }
 
@@ -46,6 +80,28 @@ p {
         display: inline;
         margin-right: 5px;
     }
+}
+.toolbar__search {
+    content: '';
+    background: url('/asserts/header_search.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.toolbar__like {
+    content: '';
+    background: url('/asserts/header_like.svg');
+    display: inline-block;
+    width: 21px;
+    height: 17px;
+}
+
+.toolbar__cart {
+    content: '';
+    background: url('/asserts/header_cart.svg');
+    display: inline-block;
+    width: 18px;
+    height: 16px;
 }
 
 .toolbar__btn {
@@ -157,6 +213,18 @@ p {
         width: 53px;
         margin-left: 400px;
         margin-top: 20px;
+        &::before {
+            content: '';
+            background: url('/asserts/gallery_arrow_left.svg');
+            width: 7px;
+            height: 12px;
+        }
+        &::after {
+            content: '';
+            background: url('/asserts/gallery_arrow_right.svg');
+            width: 8px;
+            height: 12px;
+        }
     }
 }
 
@@ -229,8 +297,35 @@ p {
         li{
             display: inline;
             margin-right: 18px;
+            a {
+                text-decoration: none;
+            };
         }
     }
+}
+
+.social__item-instagram:before {
+    content: '';
+    background: url('/asserts/instagram_icon.svg');
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+}
+
+.social__item-facebook {
+    content: '';
+    background: url('/asserts/facebook_icon.svg');
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+}
+
+.social__item-twitter {
+    content: '';
+    background: url('/asserts/twitter_icon.svg');
+    display: inline-block;
+    width: 22px;
+    height: 18px;
 }
 
 
@@ -264,10 +359,79 @@ p {
     }
 }
 
-
-
-
 .footer__content {
-    height: 275px;
     background-color: #444240;
+
 }
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 275px;
+    max-width: 1125px;
+    margin: 0 auto;
+}
+.footer__info{
+    list-style: none;
+    li{
+        margin-bottom: 15px;
+    }
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    .footer__logo {
+    &::before {
+        content: '';
+        background: url('/asserts/footer_Ellipse.svg');
+        width: 25px;
+        height: 25px;
+    }
+
+    &::after {
+        content: '';
+        background: url('/asserts/footer_CONQUEST.svg');
+        width: 96px;
+        height: 13px;
+    }
+}
+}
+.footer__menu {
+}
+.footer__menu h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.footer__menu ul {
+        list-style: none;
+        padding: 0;
+        li{
+            margin-bottom: 15px;
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+
+
+
+
