@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "PlayfairDisplayRegular";
-  src: url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
 body {
   overflow-x: hidden;
   padding: 0;
@@ -142,6 +136,46 @@ p {
           justify-content: space-between;
 }
 
+.intro__text {
+  height: 100px;
+  width: 600px;
+  margin-top: 180px;
+  z-index: 2;
+}
+.intro__text h1 {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.intro__text h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.intro__text .intro__dscrp {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 310px;
+}
+
+.intro__line-title {
+  position: relative;
+  top: 75px;
+  right: 60px;
+}
+
+.intro__catalog {
+  width: 205px;
+  height: 64px;
+  background-color: #D4B098;
+  border: none;
+  margin-top: 25px;
+  color: #FFFFFF;
+}
+.intro__catalog:hover {
+  cursor: pointer;
+}
+
 .intro__img {
   position: relative;
   margin-right: 100px;
@@ -151,7 +185,7 @@ p {
 
 .intro__gradient {
   position: relative;
-  bottom: 848px;
+  bottom: 888px;
   right: 200px;
   z-index: 1;
 }
@@ -160,12 +194,40 @@ p {
   position: relative;
   bottom: 660px;
   right: 100px;
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1B1A17;
+}
+
+.intro__line-price {
+  position: relative;
+  bottom: 645px;
+  right: 30px;
 }
 
 .intro__diameter {
   position: relative;
   bottom: 200px;
   left: 470px;
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+}
+
+.intro__line-diameter {
+  position: relative;
+  bottom: 185px;
+  left: 410px;
+}
+
+.intro__catalog div {
+  background-color: #D4B098;
 }
 
 .popular__content {
@@ -181,6 +243,38 @@ p {
           align-items: center;
   height: 720px;
   background-color: #FFFFFF;
+}
+
+.popular__title {
+  margin-top: 100px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.popular__price {
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__catalog {
+  margin-left: 1020px;
+  background-color: transparent;
+  height: 37px;
+  width: 120px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-bottom: 1px solid #C4C0B6;
+}
+.popular__catalog:hover {
+  cursor: pointer;
 }
 
 .popular__list {
@@ -203,6 +297,10 @@ p {
   height: 467px;
   background-color: #FDFDFB;
 }
+.popular__list li h3 {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
 .popular__list li img {
   height: 313px;
   width: 313px;
@@ -216,7 +314,15 @@ p {
 
 .popular__more {
   position: relative;
+  left: 30px;
   bottom: 300px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #1B1A17;
 }
 
 .gallery__content {
@@ -310,11 +416,12 @@ p {
   width: 205px;
   height: 64px;
   background-color: #D4B098;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #FFFFFF;
   border: none;
   margin-top: 25px;
+  color: #FFFFFF;
+}
+.gallery__catalog:hover {
+  cursor: pointer;
 }
 
 .news__content {
@@ -345,7 +452,7 @@ p {
   text-decoration: none;
 }
 
-.social__item-instagram:before {
+.social__item-instagram {
   content: "";
   background: url("/asserts/instagram_icon.svg");
   display: inline-block;
@@ -465,18 +572,6 @@ p {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
 }
-.footer__info .footer__logo::before {
-  content: "";
-  background: url("/asserts/footer_Ellipse.svg");
-  width: 25px;
-  height: 25px;
-}
-.footer__info .footer__logo::after {
-  content: "";
-  background: url("/asserts/footer_CONQUEST.svg");
-  width: 96px;
-  height: 13px;
-}
 
 .footer__menu h4 {
   font-family: "Roboto", sans-serif;
@@ -485,7 +580,6 @@ p {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.07em;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 

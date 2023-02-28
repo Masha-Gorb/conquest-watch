@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <title>Conquest Watch</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
     <div class="container">
+
         <div class="header__content">
             <div class="header__logo">
                 <img src="asserts/logo_Ellipse.svg" alt="Иконка логотипа" class="logo__icon">
                 <a href="">
                     <img src="asserts/logo_CONQUEST.svg" alt="Текст логотипа" class="logo__text">
                 </a>
-
             </div>
 
             <nav class="header__navigation">
@@ -46,8 +53,8 @@
                     </button>
                 </li>
             </ul>
-
         </div>
+
     </div>
 </header>
 
@@ -56,63 +63,67 @@
         <div class="intro__content">
 
             <div class="wrapper">
-                <div>
+                <div class="intro__text">
+                    <img src="asserts/intro_Line.svg" alt="intro line" class="intro__line-title">
                     <h1 class="intro__title">Весна/Лето 2019</h1>
                     <h2 class="intro__subtitle">Коллекция</h2>
                     <p class="intro__dscrp">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
-                    <button class="intro__catalog">Смотреть каталог</button>
+                    <button class="intro__catalog">СМОТРЕТЬ КАТАЛОГ</button>
                 </div>
 
                 <div>
                     <img src="img/intro_watch_main.svg" alt="изображение часов" class="intro__img"/>
-                    <div class="intro__price">22 000 Р</div>
+                    <img src="asserts/intro_Line.svg" alt="intro line" class="intro__line-price">
+                    <div class="intro__price">22 000 ₽</div>
+                    <img src="asserts/intro_Line.svg" alt="intro line" class="intro__line-diameter">
                     <div class="intro__diameter">28 мм диаметр</div>
                     <img src="asserts/intro_Ellipse.svg" alt="ellipse" class="intro__gradient">
-
                 </div>
-
-
-
-            </div>
             </div>
         </div>
 
+    </div>
 </section>
 
 <section class="popular">
     <div class="container">
+
         <div class="popular__content">
             <h2 class="popular__title">Популярные модели</h2>
-            <button class="popular__watch--all">Смотреть все</button>
+            <button class="popular__catalog">Смотреть все</button>
             <ul class="popular__list">
                 <li class="popular__item">
                     <div>
                         <h3>RADO</h3>
-                        <span class="popular__price">65 300</span>
+                        <span class="popular__price">65 300 ₽</span>
                         <img src="img/popular_watch_1.png" alt="popular 1" class="popular__img">
                         <img src="asserts/popular_Ellipse.svg" alt="elipse" class="popular__elipse">
-                        <span class="popular__more">Подробнее</span>
+                        <div>
+                            <a class="popular__more" href="">— Подробнее</a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="popular__item">
                     <div>
                         <h3>BVLGARI</h3>
-                        <span class="popular__price">81 700</span>
+                        <span class="popular__price">81 700 ₽</span>
                         <img src="img/popular_watch_3.png" alt="popular 1" class="popular__img">
                         <img src="asserts/popular_Ellipse.svg" alt="elipse" class="popular__elipse">
-                        <span class="popular__more">Подробнее</span>
+                        <div>
+                            <a class="popular__more" href="">— Подробнее</a>
+                        </div>
                     </div>
-
                 </li>
-
                 <li class="popular__item">
                     <div>
                         <h3>BVLGARI</h3>
-                        <span class="popular__price">72 700</span>
+                        <span class="popular__price">72 700 ₽</span>
                         <img src="img/popular_watch_4.png" alt="popular 4" class="popular__img">
                         <img src="asserts/popular_Ellipse.svg" alt="elipse" class="popular__elipse">
-                        <span class="popular__more">Подробнее</span>
+                        <div>
+                            <a class="popular__more" href="">— Подробнее</a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -123,98 +134,103 @@
 
 <section class="gallery">
     <div class="container">
-            <div class="gallery__content">
 
-                <div class="gallery__decorations">
-                    <div class="gallery__img">
-                        <img src="img/gallery_photo_banner.jpg" alt="gallery banner">
-                        <div class="gallery__arrows">01</div>
-                    </div>
-
-                    <div class="gallery__text">
-                        <h2 class="gallery__title">Подлинное качество</h2>
-                        <p class="gallery__descrp">Все часы производятся в Швейцарии и имеют сертификаты качества.
-                    Настоящие швейцарские часы — это предмет гордости и престижа.</p>
-                            <button class="gallery__catalog">СМОТРЕТЬ КАТАЛОГ</button>
-                    </div>
-
-                    <div class="gallery__baner1"></div>
-                    <div class="gallery__baner2"></div>
-                    <img src="asserts/gallery_Ellipse1.svg" alt="gallery elipse" class="gallery__elipse1">
-                    <img src="asserts/gallery_Ellipse2.svg" alt="gallery elipse" class="gallery__elipse2">
-
+        <div class="gallery__content">
+            <div class="gallery__decorations">
+                <div class="gallery__img">
+                    <img src="img/gallery_photo_banner.jpg" alt="gallery banner">
+                    <div class="gallery__arrows">01</div>
                 </div>
 
-            </div>
-    </div>
+                <div class="gallery__text">
+                    <h2 class="gallery__title">Подлинное качество</h2>
+                    <p class="gallery__descrp">Все часы производятся в Швейцарии и имеют сертификаты качества.
+                        Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+                    <button class="gallery__catalog">СМОТРЕТЬ КАТАЛОГ</button>
+                </div>
 
+                <div class="gallery__baner1"></div>
+                <div class="gallery__baner2"></div>
+                <img src="asserts/gallery_Ellipse1.svg" alt="gallery elipse" class="gallery__elipse1">
+                <img src="asserts/gallery_Ellipse2.svg" alt="gallery elipse" class="gallery__elipse2">
+
+            </div>
+        </div>
+    </div>
 
 </section>
 
 <section class="news">
     <div class="container">
-            <div class="news__content">
 
-                <div class="news__text">
-                    <h2 class="news__title">Следите за нашими новостями</h2>
-                    <p class="news__descrp">Подписывайтесь на <b>@conquest_watch</b> в соцсетях и узнавайте о новинках и акциях первыми.</p>
-                    <ul class="news__social">
-                        <li><a class="social__item-instagram" href=""></a></li>
-                        <li><a class="social__item-facebook" href=""></a></li>
-                        <li><a class="social__item-twitter" href=""></a></li>
-                    </ul>
-                </div>
-
-                <div class="news__gallery">
-                    <img src="img/news_photo_2.jpg" alt="news photo" class="news__img1">
-                    <img src="img/news_photo_1.jpg" alt="news photo" class="news__img2">
-                    <img src="img/news_photo_3.jpg" alt="news photo" class="news__img3">
-                </div>
+        <div class="news__content">
+            <div class="news__text">
+                <h2 class="news__title">Следите за нашими новостями</h2>
+                <p class="news__descrp">Подписывайтесь на <b><a>@conquest_watch</a></b> в соцсетях и узнавайте о
+                    новинках и акциях первыми.</p>
+                <ul class="news__social">
+                    <li><a class="social__item-instagram" href=""></a></li>
+                    <li><a class="social__item-facebook" href=""></a></li>
+                    <li><a class="social__item-twitter" href=""></a></li>
+                </ul>
             </div>
-    </div>
 
+            <div class="news__gallery">
+                <img src="img/news_photo_2.jpg" alt="news photo" class="news__img1">
+                <img src="img/news_photo_1.jpg" alt="news photo" class="news__img2">
+                <img src="img/news_photo_3.jpg" alt="news photo" class="news__img3">
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <footer>
-        <div class="footer__content">
-            <div class="footer__wrapper">
-                <ul class="footer__info">
-                    <li><a class="footer__logo" href="">тут лого не вставляется</a></li>
-                    <li class="footer__phone"><a href="">8 (499) 450-47-97</a></li>
-                    <li class="footer__email"><a href="">info@conquest.watch.ru</a></li>
+    <div class="footer__content">
+        <div class="footer__wrapper">
+            <ul class="footer__info">
+                <li>
+                    <img src="asserts/footer_Ellipse.svg" alt="white logo" class="footer__logo-elipse">
+                    <a class="footer__logo" href="">
+                        <img src="asserts/footer_CONQUEST.svg" alt="white logo" class="footer__logo-text">
+                    </a>
+
+                </li>
+                <li class="footer__phone"><a href="">8 (499) 450-47-97</a></li>
+                <li class="footer__email"><a href="">info@conquest.watch.ru</a></li>
+            </ul>
+
+            <div class="footer__menu">
+                <h4>О КОМПАНИИ</h4>
+                <ul class="footer-nav-list">
+                    <li class="footer__menu-item"><a href="">Наши магазины</a></li>
+                    <li class="footer__menu-item"><a href="">Вакансии</a></li>
+                    <li class="footer__menu-item"><a href="">Сертификаты</a></li>
+                    <li class="footer__menu-item"><a href="">Отзывы</a></li>
                 </ul>
-
-                <div class="footer__menu">
-                    <h4>О КОМПАНИИ</h4>
-                    <ul class="footer-nav-list">
-                        <li class="footer__menu-item"><a href="">Наши магазины</a></li>
-                        <li class="footer__menu-item"><a href="">Вакансии</a></li>
-                        <li class="footer__menu-item"><a href="">Сертификаты</a></li>
-                        <li class="footer__menu-item"><a href="">Отзывы</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__menu">
-                    <h4>ПОКУПАТЕЛЯМ</h4>
-                    <ul class="footer-nav-list">
-                        <li class="footer__menu-item"><a href="">Каталог товаров</a></li>
-                        <li class="footer__menu-item"><a href="">Как заказать?</a></li>
-                        <li class="footer__menu-item"><a href="">FAQ</a></li>
-                        <li class="footer__menu-item"><a href="">Корпоративным клиентам</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__menu">
-                    <h4>ОПЛАТА И ДОСТАВКА</h4>
-                    <ul class="footer-nav-list">
-                        <li class="footer__menu-item"><a href="">Способы оплаты</a></li>
-                        <li class="footer__menu-item"><a href="">Время доставки</a></li>
-                        <li class="footer__menu-item"><a href="">Гарантии и ремонт</a></li>
-                        <li class="footer__menu-item"><a href="">Возврат и компенсация</a></li>
-                    </ul>
-                </div>
             </div>
+
+            <div class="footer__menu">
+                <h4>ПОКУПАТЕЛЯМ</h4>
+                <ul class="footer-nav-list">
+                    <li class="footer__menu-item"><a href="">Каталог товаров</a></li>
+                    <li class="footer__menu-item"><a href="">Как заказать?</a></li>
+                    <li class="footer__menu-item"><a href="">FAQ</a></li>
+                    <li class="footer__menu-item"><a href="">Корпоративным клиентам</a></li>
+                </ul>
             </div>
+
+            <div class="footer__menu">
+                <h4>ОПЛАТА И ДОСТАВКА</h4>
+                <ul class="footer-nav-list">
+                    <li class="footer__menu-item"><a href="">Способы оплаты</a></li>
+                    <li class="footer__menu-item"><a href="">Время доставки</a></li>
+                    <li class="footer__menu-item"><a href="">Гарантии и ремонт</a></li>
+                    <li class="footer__menu-item"><a href="">Возврат и компенсация</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
